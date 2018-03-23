@@ -1,0 +1,5 @@
+ifort: remark #10397: optimization reports are generated in *.optrpt files in the output location
+Part4_par2.f90(34): error #8194: The COLLAPSE clause or the ORDERED clause with a value require perfectly nested loops:  no code may appear before or after the loops being collapsed.
+			!$OMP PARALLEL DO PRIVATE(i) REDUCTION(+:Integral) COLLAPSE(2)
+------------------------------^
+compilation aborted for Part4_par2.f90 (code 1)

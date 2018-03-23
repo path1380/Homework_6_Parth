@@ -1,0 +1,34 @@
+ifort: error #10236: File not found:  'type_defs.f90'
+ifort: remark #10397: optimization reports are generated in *.optrpt files in the output location
+Part4_par.f90(2): error #7002: Error in opening the compiled module file.  Check INCLUDE paths.   [TYPE_DEFS]
+	use type_defs
+------------^
+Part4_par.f90(6): error #6683: A kind type parameter must be a compile-time constant.   [DP]
+	real(dp) :: x1,x2,y1,y2,Integral
+-------------^
+Part4_par.f90(26): error #7002: Error in opening the compiled module file.  Check INCLUDE paths.   [TYPE_DEFS]
+		use type_defs
+--------------------^
+Part4_par.f90(29): error #6683: A kind type parameter must be a compile-time constant.   [DP]
+		real(dp) :: x1,x2,y1,y2,hx,hy,Integral
+---------------------^
+Part4_par.f90(43): error #7002: Error in opening the compiled module file.  Check INCLUDE paths.   [TYPE_DEFS]
+		use type_defs
+--------------------^
+Part4_par.f90(42): error #6683: A kind type parameter must be a compile-time constant.   [DP]
+	real(dp) function integrand(x,y)
+-------------^
+Part4_par.f90(45): error #6683: A kind type parameter must be a compile-time constant.   [DP]
+		real(dp), intent(in) :: x,y
+---------------------^
+Part4_par.f90(33): error #6404: This name does not have a type, and must have an explicit type.   [K]
+		k=0
+----------------^
+Part4_par.f90(47): error #6404: This name does not have a type, and must have an explicit type.   [DP]
+		integrand = 9*(x**2)*(y**2)/8.0_dp
+-----------------------------------------------^
+Part4_par.f90(47): error #6975: A kind-param must be a digit-string or a scalar-int-constant-name.   [DP]
+		integrand = 9*(x**2)*(y**2)/8.0_dp
+-----------------------------------------------^
+compilation aborted for Part4_par.f90 (code 1)
+/var/spool/slurmd/job721192/slurm_script: line 11: ./a.out: No such file or directory
