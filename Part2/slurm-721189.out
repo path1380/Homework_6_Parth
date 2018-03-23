@@ -1,0 +1,5 @@
+ifort: remark #10397: optimization reports are generated in *.optrpt files in the output location
+Part2_simd.f90(33): error #6404: This name does not have a type, and must have an explicit type.   [K]
+		k=0
+----------------^
+compilation aborted for Part2_simd.f90 (code 1)

@@ -1,0 +1,5 @@
+ifort: remark #10397: optimization reports are generated in *.optrpt files in the output location
+Part2.f90(14): error #6404: This name does not have a type, and must have an explicit type.   [OMP_GET_WTIME]
+	time1 = omp_get_wtime()
+----------------^
+compilation aborted for Part2.f90 (code 1)

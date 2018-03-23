@@ -1,0 +1,18 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+
+Begin optimization report for: PART2_1
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at Part2_1.f90(33,9) inlined into Part2_1.f90(19,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at Part2_1.f90(33,9) inlined into Part2_1.f90(19,7)
+<Remainder loop for vectorization>
+LOOP END
+===========================================================================
